@@ -1,11 +1,28 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>내 홈페이지</title>
-</head>
-<body>
-    <h1>내 깃허브 홈페이지에 오신 걸 환영합니다!</h1>
-    <p>윈도우에서 성공적으로 만들었습니다.</p>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="<%= GROOM_FULLNAME %> ❤️ <%= BRIDE_FULLNAME %> 결혼합니다."
+    />
+    <meta property="og:image" content="/preview_image.png" />
+    <meta property="og:url" content="%BASE_URL%/" />
+    <meta property="og:description" content="<%= DESCRIPTION %>" />
+    <link rel="preload" href="/MapoGoldenPierA.woff" as="font" crossorigin />
+    <link rel="preload" href="/AlluraRegular.woff" as="font" crossorigin />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/font.css" />
+    <title><%= GROOM_FULLNAME %> ❤️ <%= BRIDE_FULLNAME %> 결혼합니다.</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
 </html>
